@@ -12,9 +12,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import { Fingerprint, Gamepad } from '@mui/icons-material';
+import { CloudDownload, Download, Fingerprint, Gamepad } from '@mui/icons-material';
 
-const pages = ['Live Projects', 'Certifications', 'Example Projects'];
+const pages = ['Live Projects', 'Certificates', 'Example Projects'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function ResponsiveAppBar(props: any) {
@@ -93,6 +93,10 @@ function ResponsiveAppBar(props: any) {
                                     <Typography textAlign="center">{page}</Typography>
                                 </MenuItem>
                             ))}
+                            <MenuItem key={"cv"} onClick={handleCloseNavMenu}>
+                                <Typography textAlign="center">{'cv'}</Typography>
+                            </MenuItem>
+
                         </Menu>
                     </Box>
                     <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
@@ -124,11 +128,28 @@ function ResponsiveAppBar(props: any) {
                                 {page}
                             </Button>
                         ))}
+                        <Button
+                            key={"cv"}
+                            onClick={handleCloseNavMenu}
+                            sx={{ my: 2, color: 'white', display: 'block' }}
+                        >
+                            <Typography style={{
+                                display: 'flex',
+                                alignItems: 'center',
+                                flexWrap: 'wrap',
+                            }}>
+                                <Download >
+                                </Download>
+
+                                <span>cv</span>
+                            </Typography>
+                        </Button>
+
                     </Box>
 
                 </Toolbar>
             </Container>
-        </AppBar>
+        </AppBar >
     );
 }
 export default ResponsiveAppBar;
