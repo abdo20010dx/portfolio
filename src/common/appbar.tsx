@@ -13,6 +13,8 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { CloudDownload, Download, Fingerprint, Gamepad } from '@mui/icons-material';
+import { Link } from '@mui/material';
+import { styles } from '../shared/styles';
 
 const pages = ['Live Projects', 'Certificates', 'Example Projects'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -36,29 +38,33 @@ function ResponsiveAppBar(props: any) {
         setAnchorElUser(null);
     };
 
+    const Abdo = () => (
+        <>
+            <Fingerprint sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+            <Typography
+                variant="h6"
+                noWrap
+                component="a"
+                href="/home"
+                sx={{
+                    mr: 2,
+                    display: { xs: 'none', md: 'flex' },
+                    fontFamily: 'monospace',
+                    fontWeight: 700,
+                    letterSpacing: '.3rem',
+                    color: 'inherit',
+                    textDecoration: 'none',
+                }}
+            >
+                Abdo Gomaa
+            </Typography>
+        </>
+    )
     return (
-        <AppBar position="static">
+        <AppBar sx={styles.appBar} position="static">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    <Fingerprint sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-                    <Typography
-                        variant="h6"
-                        noWrap
-                        component="a"
-                        href="#app-bar-with-responsive-menu"
-                        sx={{
-                            mr: 2,
-                            display: { xs: 'none', md: 'flex' },
-                            fontFamily: 'monospace',
-                            fontWeight: 700,
-                            letterSpacing: '.3rem',
-                            color: 'inherit',
-                            textDecoration: 'none',
-                        }}
-                    >
-                        Abdo Gomaa
-                    </Typography>
-
+                    <Abdo />
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                         <IconButton
                             size="large"
@@ -94,21 +100,20 @@ function ResponsiveAppBar(props: any) {
                                 </MenuItem>
                             ))}
                             <MenuItem key={"cv"} onClick={handleCloseNavMenu}>
-                                <Typography textAlign="center">{'cv'}</Typography>
+                                <Typography download component={"a"} href='CV_abdo gomaa.pdf' textAlign="center">{'cv'}</Typography>
                             </MenuItem>
 
                         </Menu>
                     </Box>
-                    <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+                    <Fingerprint sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
                     <Typography
-                        variant="h5"
+                        variant="h6"
                         noWrap
                         component="a"
-                        href="#app-bar-with-responsive-menu"
+                        href="/home"
                         sx={{
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
-                            flexGrow: 1,
                             fontFamily: 'monospace',
                             fontWeight: 700,
                             letterSpacing: '.3rem',
@@ -116,11 +121,12 @@ function ResponsiveAppBar(props: any) {
                             textDecoration: 'none',
                         }}
                     >
-                        LOGO
+                        Abdo Gomaa
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
                             <Button
+                                href={"/" + page}
                                 key={page}
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
@@ -129,6 +135,8 @@ function ResponsiveAppBar(props: any) {
                             </Button>
                         ))}
                         <Button
+                            download
+                            href='CV_abdo gomaa.pdf'
                             key={"cv"}
                             onClick={handleCloseNavMenu}
                             sx={{ my: 2, color: 'white', display: 'block' }}
