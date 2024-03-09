@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f855e6bc.css",
-    "main.js": "/portfolio/static/js/main.5b21a9c3.js",
+    "main.js": "/portfolio/static/js/main.9202b311.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
     "static/media/abdelrahman gomaa's certificate page.pdf": "/portfolio/static/media/abdelrahman gomaa's certificate page.8dd85f245170ba10da08.pdf",
     "static/media/background.jpg": "/portfolio/static/media/background.9fd0a02d094efbf218ff.jpg",
@@ -13,11 +13,11 @@
     "static/media/devops_udacity_certificate.pdf": "/portfolio/static/media/devops_udacity_certificate.90fb4fe651550515cc0a.pdf",
     "index.html": "/portfolio/index.html",
     "main.f855e6bc.css.map": "/portfolio/static/css/main.f855e6bc.css.map",
-    "main.5b21a9c3.js.map": "/portfolio/static/js/main.5b21a9c3.js.map",
+    "main.9202b311.js.map": "/portfolio/static/js/main.9202b311.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.5b21a9c3.js"
+    "static/js/main.9202b311.js"
   ]
 }
