@@ -76,9 +76,10 @@ export default function Certificates() {
                             <Typography color={"primary.dark"} component={"a"} variant='h4' href={certificate.url}>Certificate Link</Typography>
                         </AccordionDetails>
                         <CardMedia
+                            width="100%"
                             height={"750vh"}
-                            component="iframe"
-                            src={require(`./certificates/${certificate.pdf}`)}
+                            component={"object"}
+                            data={require(`./certificates/${certificate.pdf}`)}
                         />
 
                         <br />
