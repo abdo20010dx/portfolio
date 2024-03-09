@@ -45,7 +45,7 @@ function ResponsiveAppBar(props: any) {
                 variant="h6"
                 noWrap
                 component="a"
-                href="/home"
+                href="/portfolio/#/home"
                 sx={{
                     mr: 2,
                     display: { xs: 'none', md: 'flex' },
@@ -110,7 +110,7 @@ function ResponsiveAppBar(props: any) {
                         variant="h6"
                         noWrap
                         component="a"
-                        href="/home"
+                        href="/portfolio/#/home"
                         sx={{
                             mr: 2,
                             display: { xs: 'flex', md: 'none' },
@@ -126,7 +126,7 @@ function ResponsiveAppBar(props: any) {
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
                             <Button
-                                href={"/" + page}
+                                href={"/portfolio/#/" + page}
                                 key={page}
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}

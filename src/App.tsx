@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 import ResponsiveAppBar from './common/appbar';
@@ -8,7 +8,7 @@ import Certificates from './components/certificates/certificates';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ResponsiveAppBar />
       <Routes>
         <Route
@@ -24,7 +24,7 @@ function App() {
           element={<Certificates />}
         />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
