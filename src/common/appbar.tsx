@@ -96,7 +96,7 @@ function ResponsiveAppBar(props: any) {
                         >
                             {pages.map((page) => (
                                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center">{page}</Typography>
+                                    <Typography component={"a"} href={"/portfolio/#/" + page} textAlign="center">{page}</Typography>
                                 </MenuItem>
                             ))}
                             <MenuItem key={"cv"} onClick={handleCloseNavMenu}>
