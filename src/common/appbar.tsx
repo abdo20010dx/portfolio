@@ -12,7 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import { CloudDownload, Download, Fingerprint, Gamepad } from '@mui/icons-material';
+import { CloudDownload, Download, Fingerprint, Gamepad, LinkedIn } from '@mui/icons-material';
 import { Link } from '@mui/material';
 import { styles } from '../shared/styles';
 

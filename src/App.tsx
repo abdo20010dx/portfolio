@@ -5,6 +5,7 @@ import './App.css';
 import ResponsiveAppBar from './common/appbar';
 import Home from './components/home/home';
 import Certificates from './components/certificates/certificates';
+import Footer from './common/footer';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           element={<Certificates />}
         />
       </Routes>
+      <Footer />
     </HashRouter>
   );
 }
