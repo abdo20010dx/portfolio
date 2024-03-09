@@ -1,15 +1,23 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.f855e6bc.css",
-    "main.js": "/portfolio/static/js/main.cf439b7c.js",
+    "main.js": "/portfolio/static/js/main.61b4b3bc.js",
     "static/js/453.ace21015.chunk.js": "/portfolio/static/js/453.ace21015.chunk.js",
+    "static/media/abdelrahman gomaa's certificate page.pdf": "/portfolio/static/media/abdelrahman gomaa's certificate page.8dd85f245170ba10da08.pdf",
+    "static/media/background.jpg": "/portfolio/static/media/background.9fd0a02d094efbf218ff.jpg",
+    "static/media/nodejs_certificate.pdf": "/portfolio/static/media/nodejs_certificate.5b2af5614dbc4ee6fdde.pdf",
+    "static/media/javascript_certificate.pdf": "/portfolio/static/media/javascript_certificate.be7fa83a49181cb68b56.pdf",
+    "static/media/spring_certificate.pdf": "/portfolio/static/media/spring_certificate.3d4e5bb8d0b93b545951.pdf",
+    "static/media/java_certificate.pdf": "/portfolio/static/media/java_certificate.d39d5e3ee34695ae851f.pdf",
+    "static/media/nestjs_certificate.pdf": "/portfolio/static/media/nestjs_certificate.75b68c17e50ebf9607bf.pdf",
+    "static/media/devops_udacity_certificate.pdf": "/portfolio/static/media/devops_udacity_certificate.90fb4fe651550515cc0a.pdf",
     "index.html": "/portfolio/index.html",
     "main.f855e6bc.css.map": "/portfolio/static/css/main.f855e6bc.css.map",
-    "main.cf439b7c.js.map": "/portfolio/static/js/main.cf439b7c.js.map",
+    "main.61b4b3bc.js.map": "/portfolio/static/js/main.61b4b3bc.js.map",
     "453.ace21015.chunk.js.map": "/portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.cf439b7c.js"
+    "static/js/main.61b4b3bc.js"
   ]
 }
