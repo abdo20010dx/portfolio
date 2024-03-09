@@ -5,7 +5,7 @@ import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import RestoreIcon from '@mui/icons-material/Restore';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { Paper, Typography } from '@mui/material';
-import { LinkedIn } from '@mui/icons-material';
+import { GitHub, LinkedIn } from '@mui/icons-material';
 import { styles } from '../shared/styles';
 
 export default function Footer() {
@@ -22,7 +22,8 @@ export default function Footer() {
                         setValue(newValue);
                     }}
                 >
-                    <BottomNavigationAction href='https://www.linkedin.com/in/abdo-gomaa-672763119/' label="LinkedIn" icon={<LinkedIn />} />
+                    <BottomNavigationAction href='https://www.linkedin.com/in/abdo-gomaa-672763119/' label="Follow Me On LinkedIn" icon={<LinkedIn />} />
+                    <BottomNavigationAction href='https://github.com/abdo20010dx' label="Follow Me On GitHub" icon={<GitHub />} />
                 </BottomNavigation>
             </Paper>
         </Box >
