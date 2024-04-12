@@ -100,7 +100,7 @@ function ResponsiveAppBar(props: any) {
                                 </MenuItem>
                             ))}
                             <MenuItem key={"cv"} onClick={handleCloseNavMenu}>
-                                <Typography download component={"a"} href='CV_abdo gomaa.pdf' textAlign="center">{'cv'}</Typography>
+                                <Typography download component={"a"} href='CV_abdelrahman-gomaa.pdf' textAlign="center">{'cv'}</Typography>
                             </MenuItem>
 
                         </Menu>
@@ -136,7 +136,7 @@ function ResponsiveAppBar(props: any) {
                         ))}
                         <Button
                             download
-                            href='CV_abdo gomaa.pdf'
+                            href='CV_abdelrahman-gomaa.pdf'
                             key={"cv"}
                             onClick={handleCloseNavMenu}
                             sx={{ my: 2, color: 'white', display: 'block' }}
