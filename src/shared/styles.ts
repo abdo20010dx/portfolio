@@ -30,7 +30,7 @@ export const styles: Styles = {
     container: { /*backgroundImage: `url(${background})`, backgroundRepeat: "repeat-y", backgroundSize: "100%",*/ marginLeft: "2em", marginRight: "2rem", paddingLeft: "2em", backgroundColor: "whitesmoke" },
     profileImage: { width: "30%", borderRadius: "50%", objectFit: "fill" },
     divider: { backgroundColor: "black", marginBottom: "1em" },
-    head: { color: "black", fontSize: "3rem", fontFamily: "fantasy" },
+    head: { color: "black", fontSize: "3rem", fontFamily: "cursive" },
     title: { color: "black", fontSize: "1.7rem", fontWeight: "bold", fontFamily: "cursive" },
     techSkills: { color: "black", fontSize: "1.5rem", fontWeight: "bold", fontFamily: "cursive" },
     softSkills: { color: "black", fontSize: "1.5rem", fontWeight: "bold", fontFamily: "cursive" },
