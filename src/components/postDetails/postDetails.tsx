@@ -10,7 +10,8 @@ import { styles } from '../../shared/styles';
 //https://www.facebook.com/dialog/share?app_id=87741124305&href=https%3A%2F%2Fshiner-suited-only.ngrok-free.app%2FpostDetails%2F5357&display=popup
 import { useParams } from "react-router-dom";
 import { projects } from '../live-projects/data';
-const allData = [...projects]
+import { samples } from '../exmaple-projects/data';
+const allData = [...projects, ...samples]
 export default function PostDetails() {
 
     const { postId = 1 } = useParams();
@@ -28,13 +29,7 @@ export default function PostDetails() {
                         <Typography href={post?.websiteUrl} component={"a"} sx={styles.source} variant='h4' display='block'>{post?.title}</Typography>
                     </CardContent>
 
-                    <CardMedia
-                        sx={styles.imageDetais}
-                        component="img"
-                        image={post?.image_url}
-                        alt={post?.title}
-                    />
-                    <br />
+
                     <CardContent>
 
                         <Typography sx={styles.source} fontWeight={"bolder"} variant='h6' display='block'>
@@ -56,6 +51,18 @@ export default function PostDetails() {
 
                     </CardContent>
 
+                    {post?.image_url.map(image => (
+                        <>
+                            <CardMedia
+                                sx={styles.imageDetais}
+                                component="img"
+                                image={image}
+                                alt={post?.title}
+                            />
+                            <br />
+                        </>
+
+                    ))}
                 </Card>
             </Box>
         </>

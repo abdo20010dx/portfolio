@@ -67,7 +67,7 @@ export function DataGrid({ post: thePost, key, lg = 4, height = "250rem", md = 4
                         sx={{ objectFit: "fill" }}
                         component="img"
                         height={height}
-                        image={post.image_url ?? newsImage}
+                        image={post.image_url[0] ?? newsImage}
                         alt={post.title}
                     />
                 </Link>

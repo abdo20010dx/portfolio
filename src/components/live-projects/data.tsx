@@ -20,14 +20,14 @@ We offer comprehensive solutions for managing restaurants of various sizes, rang
 
 `,
         id: 1,
-        image_url: rms,
+        image_url: [rms],
         title: "restaurant management system",
         websiteUrl: "http://104.248.47.7/",
     },
     {
         content: "online booking hotels ,  properties and a rental property B2C provider, where we connect hosts with travelers to get the rental property no matter where they go and make their travelling experience a bliss",
         id: 2,
-        image_url: staywo,
+        image_url: [staywo],
         title: "online booking hotels ,  properties ",
         websiteUrl: "https://www.staywo.com/",
 
@@ -37,7 +37,7 @@ We offer comprehensive solutions for managing restaurants of various sizes, rang
         related to the activities of the international horse race held at King Abdulaziz Racetrack in Riyadh, Saudi Arabia. It is the richest horse race ever held, with a $20 million purse. It is the main highlight race of the Saudi Cup Night
         `,
         id: 3,
-        image_url: frusiya,
+        image_url: [frusiya],
         title: "frusiya websites for horses races in ksa",
         websiteUrl: "https://www.frusiya.com/index.php?language=en",
 
@@ -55,7 +55,7 @@ All of that to provide our customers with the best services, so, we decided to r
 
         `,
         id: 4,
-        image_url: satafood,
+        image_url: [satafood],
         title: "e-commerce and online food ordering company ",
         websiteUrl: "https://www.sata-food.com/en",
 

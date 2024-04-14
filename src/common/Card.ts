@@ -5,5 +5,5 @@ export interface CardData {
     title: string
     video_url?: string
     content: string
-    image_url: string
+    image_url: string[]
 }

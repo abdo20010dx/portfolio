@@ -16,7 +16,7 @@ interface Post {
     posts: CardData[]
 }
 
-export default function Carousel({ posts }: Post) {
+export default function Carousel({ posts }: Readonly<Post>) {
     const steps = posts
     const theme = useTheme();
     const [activeStep, setActiveStep] = React.useState(0);

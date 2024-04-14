@@ -30,10 +30,10 @@ export const styles: Styles = {
     container: { /*backgroundImage: `url(${background})`, backgroundRepeat: "repeat-y", backgroundSize: "100%",*/ marginLeft: "2em", marginRight: "2rem", paddingLeft: "2em", backgroundColor: "whitesmoke" },
     profileImage: { width: "30%", borderRadius: "50%", objectFit: "fill" },
     divider: { backgroundColor: "black", marginBottom: "1em" },
-    head: { color: "black", fontSize: "3rem", fontFamily: "cursive" },
-    title: { color: "black", fontSize: "1.7rem", fontWeight: "bold", fontFamily: "cursive" },
-    techSkills: { color: "black", fontSize: "1.5rem", fontWeight: "bold", fontFamily: "cursive" },
-    softSkills: { color: "black", fontSize: "1.5rem", fontWeight: "bold", fontFamily: "cursive" },
+    head: { color: "black", fontSize: "3rem" },
+    title: { color: "black", fontSize: "1.7rem", fontWeight: "bold" },
+    techSkills: { color: "black", fontSize: "1.5rem", fontWeight: "bold" },
+    softSkills: { color: "black", fontSize: "1.5rem", fontWeight: "bold" },
     accordion: { bgcolor: "primary.light", color: "whitesmoke" },
 
     root: {
@@ -89,7 +89,7 @@ export const styles: Styles = {
     imageDetais: {
         objectFit: "fill",
         height: '30em', //em equal number times of current font size
-        width: '70%', //em equal number times of
+        width: { s: "100%", xs: "100%", m: "70%", l: "70%", xl: "70%" }, //em equal number times of
 
     }
 
