@@ -38,6 +38,7 @@ import devops9 from '../images/example/SCREENSHOT09.png'
 import devops10 from '../images/example/SCREENSHOT10.png'
 import devops11 from '../images/example/SCREENSHOT11.jpg'
 import devops12 from '../images/example/SCREENSHOT12.jpg'
+import { certificatesData } from './certificates'
 
 const newsPics = [news7, news1, news2, news3, news4, news5, news6, news8]
 const news = newsPics[Math.floor(Math.random() * newsPics.length)];
@@ -256,33 +257,7 @@ export const personalInfo = {
       `Problem solver`,
     ],
 
-    courses: [
-      {
-        id: 'course1',
-        title: `React - The Complete Guide (incl Hooks, React Router, Redux) - Academind`,
-        url: "https://www.udemy.com/course/react-the-complete-guide-incl-redux/",
-        certificate: "https://www.udemy.com/certificate/UC-3a850640-b580-48db-abc6-d8f42eb7ff53/"
-      },
-      {
-        id: 'course2',
-        title: `The Complete Web Developer in 2021: Zero to Mastery - Zero To Mastery Academy`,
-        url: "https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/",
-        certificate: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-855c0a51-9124-486f-9c1c-d13e3871a8db.pdf",
-      },
-
-      {
-        id: 'course3',
-        title: `Complete Python Developer in 2021: Zero to Mastery - Zero To Mastery Academy`,
-        url: "https://www.udemy.com/course/complete-python-developer-zero-to-mastery/",
-        certificate: "https://www.udemy.com/certificate/UC-c839c267-f408-4552-a195-e1b7d59cd1bd/",
-      },
-      {
-        id: 'course4',
-        title: `Complete SQL + Databases Bootcamp: Zero to Mastery - Zero To Mastery Academy`,
-        url: "https://www.udemy.com/course/complete-sql-databases-bootcamp-zero-to-mastery/",
-        certificate: "https://www.udemy.com/certificate/UC-dbba7d1c-c40b-4126-a187-14f40128458a/",
-      },
-    ],
+    courses: certificatesData,
   },
 
   projects: [
