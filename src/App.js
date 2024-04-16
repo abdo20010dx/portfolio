@@ -74,51 +74,49 @@ const App = () => {
   }
 
   return (
-    <HashRouter>
 
-      <ThemeProvider theme={theme}>
-        <Paper className={classes.root}>
-          <Grid container>
-            {!isMobile ? (
-              <NavBar isMobile={isMobile} />
-            ) : (
-              <MobileProfile
-                open={open}
-                handleOpenMenu={handleOpenMenu}
+    <ThemeProvider theme={theme}>
+      <Paper className={classes.root}>
+        <Grid container>
+          {!isMobile ? (
+            <NavBar isMobile={isMobile} />
+          ) : (
+            <MobileProfile
+              open={open}
+              handleOpenMenu={handleOpenMenu}
+              isMobile={isMobile}
+            />
+          )}
+
+          <Grid item className={classes.rootPages} xs>
+            <Box
+              className={
+                !isMobile ? classes.switchBtn : classes.switchBtnMobile
+              }>
+              <DarkModeSwitch
                 isMobile={isMobile}
+                setDarkmode={setDarkmode}
+                darkMode={darkMode}
               />
-            )}
-
-            <Grid item className={classes.rootPages} xs>
-              <Box
-                className={
-                  !isMobile ? classes.switchBtn : classes.switchBtnMobile
-                }>
-                <DarkModeSwitch
-                  isMobile={isMobile}
-                  setDarkmode={setDarkmode}
-                  darkMode={darkMode}
-                />
-              </Box>
-              <Switch>
-                <Route exact path='/'>
-                  <AboutMe isMobile={isMobile} />
-                </Route>
-                <Route exact path='/resume'>
-                  <Resume />
-                </Route>
-                <Route path='/portfolio'>
-                  <Portfolio />
-                </Route>
-                <Route path='*' component={PageNotFound} />
-              </Switch>
-            </Grid>
-            <MenuBtn onClick={handleOpenMenu} isMobile={isMobile} open={open} />
+            </Box>
+            <Switch>
+              <Route exact path='/'>
+                <AboutMe isMobile={isMobile} />
+              </Route>
+              <Route exact path='/resume'>
+                <Resume />
+              </Route>
+              <Route path='/projects'>
+                <Portfolio />
+              </Route>
+              <Route path='*' component={PageNotFound} />
+            </Switch>
           </Grid>
-        </Paper>
-        <CssBaseline />
-      </ThemeProvider>
-    </HashRouter>
+          <MenuBtn onClick={handleOpenMenu} isMobile={isMobile} open={open} />
+        </Grid>
+      </Paper>
+      <CssBaseline />
+    </ThemeProvider>
   )
 }
 
