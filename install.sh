@@ -1,0 +1,19 @@
+node -v
+npm i @emotion/react
+npm i @emotion/styled
+npm i @mui/icons-material
+npm i @mui/lab
+npm i @mui/material
+npm i @testing-library/jest-dom
+npm i @testing-library/react
+npm i @testing-library/user-event
+npm i @types/jest
+npm i @types/node
+npm i @types/react
+npm i @types/react-dom
+npm i react
+npm i react-dom
+npm i react-router-dom
+npm i react-scripts
+npm i typescript
+npm i web-vitals
