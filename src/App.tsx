@@ -94,13 +94,13 @@ function App() {
                 />
               </Box>
               <Routes>
-                <Route element={<AboutMe isMobile={isMobile} />} path='/portfolio'>
+                <Route element={<AboutMe isMobile={isMobile} />} path='/'>
 
                 </Route>
-                <Route element={<Resume />} path='/portfolio/resume'>
+                <Route element={<Resume />} path='/resume'>
 
                 </Route>
-                <Route element={<Portfolio />} path='/portfolio/projects'>
+                <Route element={<Portfolio />} path='/projects'>
 
                 </Route>
                 <Route path='*' Component={PageNotFound} />

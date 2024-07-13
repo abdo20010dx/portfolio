@@ -18,19 +18,19 @@ export const menuItems = [
     text: "About Me",
     icon: <InfoIcon />,
     color: "secondary",
-    path: "/portfolio",
+    path: "/",
   },
   {
     text: "Resume",
     icon: <SchoolIcon />,
     color: "secondary",
-    path: "/portfolio/resume",
+    path: "/resume",
   },
   {
     text: "Porfolio",
     icon: <BusinessCenterIcon />,
     color: "secondary",
-    path: "/portfolio/projects",
+    path: "/projects",
   },
 ];
 const drawerWidth = 100;
