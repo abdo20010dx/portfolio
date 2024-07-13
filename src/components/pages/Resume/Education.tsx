@@ -9,12 +9,17 @@ import TimelineDot from "@mui/lab/TimelineDot";
 import School from "@mui/icons-material/School";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-import { Box, Grid, useTheme } from "@mui/material";
+import { Box, Grid, SxProps, useTheme } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 import { personalInfo } from "../../../assets/data/personalInfo";
 import { makeStyles } from "@mui/styles";
-
-const useStyles: any = makeStyles((theme: any) => ({
+class Classes {
+  opositeItem?: SxProps
+  timelineContent?: SxProps
+  paper?: SxProps
+  missingOppositeContent?: SxProps
+}
+const classes: Classes = {
   opositeItem: {
     flex: 1,
     padding: 0,
@@ -33,15 +38,14 @@ const useStyles: any = makeStyles((theme: any) => ({
       display: "none",
     },
   },
-}));
+};
 
 const Education = (props: any) => {
-  const classes = useStyles();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <Grid container className={classes.root}>
+    <Grid container >
       {isMobile ? (
         <Timeline>
           <Typography variant="h6" align="center" style={{ fontWeight: 'bold' }}>
@@ -50,7 +54,7 @@ const Education = (props: any) => {
           {personalInfo.education.map((school) => (
             <TimelineItem
               key={school.id}
-              classes={{ root: classes.missingOppositeContent }}
+              sx={classes.missingOppositeContent}
             >
               <TimelineSeparator>
                 <TimelineDot color="primary" />
@@ -62,7 +66,7 @@ const Education = (props: any) => {
                     {school.year.start} - {school.year.end}
                   </Box>
                 </Typography>
-                <Paper elevation={3} className={classes.paper}>
+                <Paper elevation={3} sx={classes.paper}>
                   <Typography variant="body1" style={{ fontWeight: 'bold' }}>
                     {school.schoolName}
                   </Typography>
@@ -80,7 +84,7 @@ const Education = (props: any) => {
           </Typography>
           {personalInfo.education.map((school) => (
             <TimelineItem key={school.id}>
-              <TimelineOppositeContent classes={{ root: classes.opositeItem }}>
+              <TimelineOppositeContent sx={classes.opositeItem}>
                 <Typography variant="caption">
                   <Box>
                     {school.year.start} - {school.year.end}
@@ -93,8 +97,8 @@ const Education = (props: any) => {
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
-              <TimelineContent classes={{ root: classes.timelineContent }}>
-                <Paper elevation={3} className={classes.paper}>
+              <TimelineContent sx={classes.timelineContent}>
+                <Paper elevation={3} sx={classes.paper}>
                   <Typography variant="body1" style={{ fontWeight: 'bold' }} >
                     {school.schoolName}
                   </Typography>

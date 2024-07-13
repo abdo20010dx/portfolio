@@ -14,9 +14,15 @@ import { makeStyles } from "@mui/styles";
 const useStyles: any = makeStyles({
   root: {
     height: "100vh",
-    justifyContent: "flex-start",
+    justifyContent: "center",
     flexDirection: "column",
+    // position: "relative",
     flexWrap: "nowrap",
+    // alignItems: "center",
+    // justifyItems: "center",
+    // alignContent: "center",
+    // textAlign: "center"
+
   },
 
   cardRoot: {
@@ -40,8 +46,13 @@ const useStyles: any = makeStyles({
 
   titleHeader: {
     display: "flex",
-    justifyContent: "center",
-    fontWeight: 700
+    // justifyContent: "center",
+    // position: "relative",
+    fontWeight: 700,
+    right: "50%",
+    // alignItems: "center",
+    // alignContent: "center",
+    // textAlign: "center"
   },
 
   cardContainer: {

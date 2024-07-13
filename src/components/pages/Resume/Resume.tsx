@@ -6,7 +6,7 @@ import WorkExperience from "./WorkExperience";
 import { Zoom } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-const useStyles: any = makeStyles((theme: any) => ({
+const classes: any = {
   root: {
     height: "100vh",
     width: "100%",
@@ -18,20 +18,21 @@ const useStyles: any = makeStyles((theme: any) => ({
     backgroundColor: "#555",
     color: "white",
   },
-}));
+};
 
 const Resume = () => {
-  const classes = useStyles();
+
+
 
   return (
     <Zoom in timeout={{ enter: 500, exit: 300 }}>
       <Container>
-        <Grid container className={classes.root}>
-          <Grid item className={classes.rootItems} md={6} lg={6} sm={6} xs={12}>
+        <Grid container sx={classes.root}>
+          <Grid item sx={classes.rootItems} md={6} lg={6} sm={6} xs={12}>
             <Education classes={classes.paper} />
             <WorkExperience classes={classes.paper} />
           </Grid>
-          <Grid item className={classes.rootItems} md={6} lg={6} sm={6} xs={12}>
+          <Grid item sx={classes.rootItems} md={6} lg={6} sm={6} xs={12}>
             <ResumeSkills />
           </Grid>
         </Grid>

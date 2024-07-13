@@ -17,7 +17,7 @@ import clsx from "clsx";
 import { personalInfo } from "../../../assets/data/personalInfo";
 import { makeStyles } from "@mui/styles";
 
-const useStyles: any = makeStyles((theme: any) => ({
+const classes: any = {
   root: {
     flexDirection: "column",
     marginTop: "14px",
@@ -61,26 +61,25 @@ const useStyles: any = makeStyles((theme: any) => ({
       display: "none",
     },
   },
-}));
+};
 
 const ResumeSkills = (props: any) => {
-  const classes = useStyles();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const contentSize = isMobile ? "body2" : "body1";
 
   return (
     <>
-      <Grid container className={classes.root}>
-        <Typography variant="h5" className={classes.mainTitle}>
+      <Grid container sx={classes.root}>
+        <Typography variant="h5" sx={classes.mainTitle}>
           Skills
         </Typography>
-        <Paper className={classes.stylePaper} elevation={3}>
+        <Paper sx={classes.stylePaper} elevation={3}>
           <Typography variant="h6" style={{ fontWeight: "bold" }}>
             Programming Skills
           </Typography>
           {personalInfo.skills.codingSkills.map((skill) => (
-            <Box key={skill.id} className={classes.items}>
+            <Box key={skill.id} sx={classes.items}>
               {skill.languages.map((lang) => (
                 <Chip
                   key={Math.random()}
@@ -93,17 +92,17 @@ const ResumeSkills = (props: any) => {
             </Box>
           ))}
         </Paper>
-        <Paper className={classes.stylePaper} elevation={3}>
+        <Paper sx={classes.stylePaper} elevation={3}>
           <Typography variant="h6" style={{ fontWeight: "bold" }}>
             Languages
           </Typography>
           {personalInfo.skills.languages.map((lang) => (
-            <Grid item key={lang.id} className={classes.items}>
+            <Grid item key={lang.id} sx={classes.items}>
               <ListItem dense key={Math.random()}>
                 <TimelineDot
                   variant="outlined"
                   color="primary"
-                  className={classes.dot}
+                  sx={classes.dot}
                 />
                 <Typography variant={contentSize}>
                   {lang.title} ({lang.level})
@@ -113,7 +112,7 @@ const ResumeSkills = (props: any) => {
           ))}
         </Paper>
 
-        <Paper className={classes.stylePaper} elevation={3}>
+        <Paper sx={classes.stylePaper} elevation={3}>
           <Typography variant="h6" style={{ fontWeight: "bold" }}>
             Soft Skills
           </Typography>
@@ -122,14 +121,14 @@ const ResumeSkills = (props: any) => {
               <TimelineDot
                 variant="outlined"
                 color="primary"
-                className={classes.dot}
+                sx={classes.dot}
               />
               <Typography variant={contentSize}>{skill}</Typography>
             </ListItem>
           ))}
         </Paper>
 
-        <Paper className={classes.stylePaper} elevation={3}>
+        <Paper sx={classes.stylePaper} elevation={3}>
           <Typography variant="h6" style={{ fontWeight: "bold" }}>
             Courses & Certifications
           </Typography>
@@ -139,7 +138,7 @@ const ResumeSkills = (props: any) => {
                 <TimelineDot
                   variant="outlined"
                   color="primary"
-                  className={classes.dot}
+                  sx={classes.dot}
                 />
                 <Typography variant={contentSize}>
                   <Link
@@ -154,7 +153,7 @@ const ResumeSkills = (props: any) => {
                   </Link>
                 </Typography>
               </ListItem>
-              <ListItem className={!isMobile ? classes.coursesCertificate : ''}>
+              <ListItem sx={!isMobile ? classes.coursesCertificate : ''}>
                 <Typography variant="subtitle2" color="secondary">
                   <Link
                     href={course.certificate}
@@ -170,13 +169,13 @@ const ResumeSkills = (props: any) => {
             </List>
           ))}
         </Paper>
-        <Paper className={clsx(classes.stylePaper)} elevation={3}>
+        <Paper sx={classes.stylePaper} elevation={3}>
           <Box>
             <Typography variant="h6" style={{ fontWeight: "bold" }}>
               Hobbies
             </Typography>
           </Box>
-          <Box className={classes.hobbies}>
+          <Box sx={classes.hobbies}>
             {personalInfo.hobbies.map((hobbie) => (
               <Chip
                 key={hobbie}

@@ -1,4 +1,4 @@
-import { Box, Button, Grid, Zoom } from '@mui/material'
+import { Box, Button, Grid, SxProps, Zoom } from '@mui/material'
 import Avatar from '@mui/material/Avatar'
 import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
@@ -12,7 +12,15 @@ import profileImage from '../../../assets/images/profile.jpg'
 import ResumeBtn from '../../UI/ResumeBtn'
 import { makeStyles } from '@mui/styles'
 
-const useStyles: any = makeStyles((theme: any) => ({
+class Classes {
+  root?: SxProps
+  rootItems?: SxProps
+  avatarLarge?: SxProps
+  avatarMid?: SxProps
+
+}
+
+const classes: Classes = {
   root: {
     display: 'flex',
     height: '100%',
@@ -25,25 +33,24 @@ const useStyles: any = makeStyles((theme: any) => ({
   rootItems: {
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'flex-start',
+    justifyContent: 'center',
     alignItems: 'center',
-    flex: 1,
     marginTop: '2rem',
+
   },
 
   avatarLarge: {
-    width: theme.spacing(20),
-    height: theme.spacing(20),
+    width: "8em",
+    height: "8em",
   },
 
   avatarMid: {
-    width: theme.spacing(10),
-    height: theme.spacing(10),
+    width: "5em",
+    height: "5em",
   },
-}))
+}
 
 const AboutMe = ({ isMobile }: any) => {
-  const classes = useStyles()
 
   const onClickHandler = (e: any) => {
     const linkTo = e.target.innerText.includes('@') ? 'mailto' : 'tel'
@@ -57,13 +64,13 @@ const AboutMe = ({ isMobile }: any) => {
       <Zoom in timeout={{ enter: 500, exit: 500 }}>
         <div>
           {personalInfo.personalProfile.map((profile) => (
-            <Grid container key={Math.random()} className={classes.root}>
-              <Grid item className={classes.rootItems}>
+            <Grid container key={Math.random()} sx={classes.root}>
+              <Grid item sx={classes.rootItems}>
                 <Avatar
                   alt='profile picture'
                   variant='circular'
                   src={profileImage}
-                  className={isMobile ? classes.avatarMid : classes.avatarLarge}
+                  sx={isMobile ? classes.avatarMid : classes.avatarLarge}
                 />
                 <Typography variant={isMobile ? 'h5' : 'h4'}>
                   {profile.firstName} {profile.lastName}
