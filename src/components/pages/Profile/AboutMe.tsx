@@ -28,6 +28,7 @@ const classes: Classes = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+
   },
 
   rootItems: {
@@ -35,7 +36,7 @@ const classes: Classes = {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '2rem',
+    marginTop: '1rem',
 
   },
 
@@ -45,8 +46,8 @@ const classes: Classes = {
   },
 
   avatarMid: {
-    width: "5em",
-    height: "5em",
+    width: "4em",
+    height: "4em",
   },
 }
 
