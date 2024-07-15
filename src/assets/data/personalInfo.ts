@@ -310,8 +310,8 @@ export const personalInfo = {
     },
     {
       title: "News worldwide website | latest news | sports | national| tech | business | etc...",
-      githubUrl: "#",
-      url: "#",
+      githubUrl: "https://github.com/abdo20010dx/worldnews",
+      url: "https://abdo20010dx.github.io/worldnews/#/",
       image: news,
       description: `
       using reactjs ,material ui, nextjs , nestjs , orm (typeorm) , database (postgres) , swagger api docs  for rest api,
