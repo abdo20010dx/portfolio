@@ -26,9 +26,8 @@ const classes: Classes = {
     height: '100%',
     width: '100%',
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'start',
     alignItems: 'center',
-
   },
 
   rootItems: {
@@ -62,88 +61,86 @@ const AboutMe = ({ isMobile }: any) => {
 
   return (
     <>
-      <Zoom in timeout={{ enter: 500, exit: 500 }}>
-        <div>
-          {personalInfo.personalProfile.map((profile) => (
-            <Grid container key={Math.random()} sx={classes.root}>
-              <Grid item sx={classes.rootItems}>
-                <Avatar
-                  alt='profile picture'
-                  variant='circular'
-                  src={profileImage}
-                  sx={isMobile ? classes.avatarMid : classes.avatarLarge}
-                />
-                <Typography variant={isMobile ? 'h5' : 'h4'}>
-                  {profile.firstName} {profile.lastName}
+      {/* <Zoom in timeout={{ enter: 500, exit: 500 }}> */}
+      {personalInfo.personalProfile.map((profile) => (
+        <Grid container key={Math.random()} sx={classes.root}>
+          <Grid item sx={classes.rootItems}>
+            <Avatar
+              alt='profile picture'
+              variant='circular'
+              src={profileImage}
+              sx={isMobile ? classes.avatarMid : classes.avatarLarge}
+            />
+            <Typography variant={isMobile ? 'h5' : 'h4'}>
+              {profile.firstName} {profile.lastName}
+            </Typography>
+            <Typography variant={isMobile ? 'h6' : 'h5'}>
+              {profile.occupation}
+            </Typography>
+            <Box sx={{ mt: 10, mb: 10, width: '80%' }}>
+              <Typography
+                align='center'
+                variant={isMobile ? 'body1' : 'h6'}>
+                Self-taught web developer from Cairo,
+                Egypt, interested in IT and everything in its orbit.
+              </Typography>
+              <Typography
+                align='center'
+                variant={isMobile ? 'body1' : 'h6'}>
+                My coding skills are: JavaScript, Typescript , nodejs ,nestjs,sql and database, React, Next.JS, HTML,CSS And CI/CD .
+              </Typography>
+              <Typography
+                align='center'
+                variant={isMobile ? 'body1' : 'h6'}>
+                I currently aim to learn as much as I can in a work environment and to improve my abilities in a professional setting.
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item >
+            <Box>
+              <Button style={{}} size='small' onClick={onClickHandler}>
+                <PhoneIcon />
+                <Typography
+                  style={{
+                    marginLeft: '5px',
+                    fontSize: isMobile && '0.9rem',
+                  }}>
+                  {profile.phone}
                 </Typography>
-                <Typography variant={isMobile ? 'h6' : 'h5'}>
-                  {profile.occupation}
+              </Button>
+            </Box>
+            <Box >
+              <Button
+                size='small'
+                style={{ textTransform: 'lowercase', }}
+                onClick={onClickHandler}>
+                <EmailIcon />
+                <Typography
+                  style={{
+                    marginLeft: '5px',
+                    fontSize: isMobile && '0.9rem',
+                  }}>
+                  {profile.email}
                 </Typography>
-                <Box sx={{ mt: 10, mb: 10, width: '80%' }}>
-                  <Typography
-                    align='center'
-                    variant={isMobile ? 'body1' : 'h6'}>
-                    Self-taught web developer from Cairo,
-                    Egypt, interested in IT and everything in its orbit.
-                  </Typography>
-                  <Typography
-                    align='center'
-                    variant={isMobile ? 'body1' : 'h6'}>
-                    My coding skills are: JavaScript, Typescript , nodejs ,nestjs,sql and database, React, Next.JS, HTML,CSS And CI/CD .
-                  </Typography>
-                  <Typography
-                    align='center'
-                    variant={isMobile ? 'body1' : 'h6'}>
-                    I currently aim to learn as much as I can in a work environment and to improve my abilities in a professional setting.
-                  </Typography>
-                </Box>
-              </Grid>
-              <Grid item >
-                <Box>
-                  <Button size='small' onClick={onClickHandler}>
-                    <PhoneIcon />
-                    <Typography
-                      style={{
-                        marginLeft: '5px',
-                        fontSize: isMobile && '0.9rem',
-                      }}>
-                      {profile.phone}
-                    </Typography>
-                  </Button>
-                </Box>
-                <Box >
-                  <Button
-                    size='small'
-                    style={{ textTransform: 'lowercase' }}
-                    onClick={onClickHandler}>
-                    <EmailIcon />
-                    <Typography
-                      style={{
-                        marginLeft: '5px',
-                        fontSize: isMobile && '0.9rem',
-                      }}>
-                      {profile.email}
-                    </Typography>
-                  </Button>
-                </Box>
-              </Grid>
-              <Grid item style={{ display: 'flex', alignItems: 'center' }}>
-                <IconButton
-                  href={profile.socialMediaLinks.githubUrl}
-                  target='_blank'>
-                  <GitHubIcon color='primary' />
-                </IconButton>
-                <IconButton
-                  href={profile.socialMediaLinks.linkedInUrl}
-                  target='_blank'>
-                  <LinkedInIcon color='primary' />
-                </IconButton>
-                <ResumeBtn />
-              </Grid>
-            </Grid>
-          ))}
-        </div>
-      </Zoom>
+              </Button>
+            </Box>
+            <Box display={"flex"} >
+              <IconButton
+                href={profile.socialMediaLinks.githubUrl}
+                target='_blank'>
+                <GitHubIcon color='primary' />
+              </IconButton>
+              <IconButton
+                href={profile.socialMediaLinks.linkedInUrl}
+                target='_blank'>
+                <LinkedInIcon color='primary' />
+              </IconButton>
+              <ResumeBtn />
+            </Box>
+          </Grid>
+        </Grid>
+      ))}
+      {/* </Zoom> */}
     </>
   )
 }
