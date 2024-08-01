@@ -52,7 +52,7 @@ export const personalInfo = {
     {
       firstName: "Abdo",
       lastName: "Gomaa",
-      occupation: "Back-end Developer",
+      occupation: "Full-Stack Developer | Back-End Developer | Front-End Developer",
       city: "Cairo",
       country: "Egypt",
       email: "abdo20010d0@gmail.com",
@@ -91,8 +91,8 @@ export const personalInfo = {
   jobs: [
     {
       id: "job1",
-      title: "Backend Developer",
-      company: "Degital Zone",
+      title: "Full-Stack Developer",
+      company: "Digital Zone",
       type: "full-time",
       year: {
         start: "2021",

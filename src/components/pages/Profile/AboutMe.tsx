@@ -74,7 +74,7 @@ const AboutMe = ({ isMobile }: any) => {
             <Typography variant={isMobile ? 'h5' : 'h4'}>
               {profile.firstName} {profile.lastName}
             </Typography>
-            <Typography variant={isMobile ? 'h6' : 'h5'}>
+            <Typography sx={{ textAlign: "center" }} variant={isMobile ? 'h6' : 'h5'}>
               {profile.occupation}
             </Typography>
             <Box sx={{ mt: 10, mb: 10, width: '80%' }}>
