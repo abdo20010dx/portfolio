@@ -20,6 +20,8 @@ import commerce3 from '../images/example/commerce3.png'
 import commerce4 from '../images/example/commerce4.png'
 import commerce5 from '../images/example/commerce5.png'
 //////////////////////////////////////////////
+import ticTacToe from '../images/example/tic-tac-toe.jpeg'
+////////////////////////////////////////////////
 import dentunity from '../images/example/dentunity.png'
 /////////////////////////////////////////////
 import todograph from '../images/example/todograph.png'
@@ -338,6 +340,16 @@ export const personalInfo = {
       description: `
       Deploy frontend , backend to aws using CI/CD tools
       DevOps ci/cd with Prometheus/ ansible / circle ci , aws / alert manager,
+`,
+    },
+    {
+      title: "Tic Tac Toe online game , multiplayer game",
+      githubUrl: "https://github.com/abdo20010dx/tic-tac-toe",
+      url: "https://abdo20010dx.github.io/tic-tac-toe/",
+      image: ticTacToe,
+      description: `
+      using nestjs ,webSocket , webrtc , reactjs , material ui , redux toolkit , IndexedDB 
+      creating an online tic-tac-toe game where you can add friends and play by sharing ids , each friend you play will be in friends list 
 `,
     },
     {
