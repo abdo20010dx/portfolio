@@ -15,6 +15,7 @@ import Portfolio from './components/pages/Portfolio/Portfolio'
 import MobileProfile from './components/pages/MobileNav'
 import AboutMe from './components/pages/Profile/AboutMe'
 import Resume from './components/pages/Resume/Resume'
+import Contact from './components/pages/Contact/Contact'
 import DarkModeSwitch from './components/UI/DarkModeSwitch'
 import MenuBtn from './components/UI/MenuBtn'
 import { HashRouter } from 'react-router-dom/cjs/react-router-dom.min'
@@ -108,6 +109,9 @@ const App = () => {
               </Route>
               <Route path='/portfolio/projects'>
                 <Portfolio />
+              </Route>
+              <Route exact path='/portfolio/contact'>
+                <Contact isMobile={isMobile} />
               </Route>
               <Route path='*' component={PageNotFound} />
             </Switch>

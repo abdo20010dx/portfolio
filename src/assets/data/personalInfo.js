@@ -50,9 +50,9 @@ const devops = devopsPics[Math.floor(Math.random() * devopsPics.length)];
 export const personalInfo = {
   personalProfile: [
     {
-      firstName: "Abdo",
+      firstName: "Abdelrahman",
       lastName: "Gomaa",
-      occupation: "Back-end Developer",
+      occupation: "Back-end & Full-stack Developer",
       city: "Cairo",
       country: "Egypt",
       email: "abdo20010d0@gmail.com",
@@ -166,6 +166,27 @@ export const personalInfo = {
         "Market analysis and research to create business plans on commercial opportunities (expansion, business development).",
       ],
     },
+    {
+      id: "job5",
+      title: "Full-stack Developer",
+      company: "Erada Finance",
+      type: "full-time",
+      year: {
+        start: "2024",
+        end: "present",
+      },
+      city: "Cairo",
+      description: [
+        "Developing, maintaining, designing, and deploying frontend and backend applications",
+        "Working with Angular for frontend development",
+        "Building backend services using Node.js, Java, and Spring Boot",
+        "Implementing CI/CD pipelines using Jenkins",
+        "Containerizing applications with Docker",
+        "Configuring and managing Nginx for reverse proxy and load balancing",
+        "Setting up monitoring and alerting with Prometheus, Alertmanager, and Grafana",
+        "Ensuring smooth deployment processes and maintaining production systems"
+      ],
+    },
     // {
     //   id: "job5",
     //   title: "Senior Sales Agent",
@@ -233,6 +254,11 @@ export const personalInfo = {
         id: "skills4",
         category: "Source Control",
         languages: ["Git", "GitHub"],
+      },
+      {
+        id: "skills5",
+        category: "AI & Tools",
+        languages: ["Prompt Engineering", "AI Tools"],
       },
     ],
     languages: [

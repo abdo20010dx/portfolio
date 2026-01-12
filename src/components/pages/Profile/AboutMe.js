@@ -75,18 +75,17 @@ const AboutMe = ({ isMobile }) => {
                   <Typography
                     align='center'
                     variant={isMobile ? 'body1' : 'h6'}>
-                    Self-taught web developer from Cairo,
-                    Egypt, interested in IT and everything in its orbit.
+                    Abdelrahman Gomaa is an experienced full-stack and backend software developer with over five years of hands-on experience delivering robust, scalable solutions. He has contributed to diverse industries including e-commerce, healthcare, food services, inventory management, food ordering, and finance.
                   </Typography>
                   <Typography
                     align='center'
                     variant={isMobile ? 'body1' : 'h6'}>
-                    My coding skills are: JavaScript, Typescript , nodejs ,nestjs,sql and database, React, Next.JS, HTML,CSS And CI/CD .
+                    Proficient in modern technologies such as Node.js, NestJS, Spring Boot, React.js, Angular, mongodb, PostgreSQL, mysql, ai tools and prompt engineering, he brings a strong command of both backend architecture and frontend design. His technical expertise is complemented by a solid foundation in software architecture, problem-solving, and cross-functional collaboration.
                   </Typography>
                   <Typography
                     align='center'
                     variant={isMobile ? 'body1' : 'h6'}>
-                    I currently aim to learn as much as I can in a work environment and to improve my abilities in a professional setting.
+                    Abdelrahman holds a Bachelor's degree in Management Information Systems from Alexandria University, and is deeply committed to continuous learning and self-improvement. Outside of work, he enjoys playing chess, watching and playing soccer, and staying physically active.
                   </Typography>
                 </Box>
               </Grid>

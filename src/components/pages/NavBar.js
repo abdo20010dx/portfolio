@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import SchoolIcon from "@material-ui/icons/School";
 import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
+import ContactMailIcon from "@material-ui/icons/ContactMail";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
@@ -31,6 +32,12 @@ export const menuItems = [
     icon: <BusinessCenterIcon />,
     color: "secondary",
     path: "/portfolio/projects",
+  },
+  {
+    text: "Contact",
+    icon: <ContactMailIcon />,
+    color: "secondary",
+    path: "/portfolio/contact",
   },
 ];
 const drawerWidth = 100;
