@@ -100,16 +100,16 @@ const App = () => {
               />
             </Box>
             <Switch>
-              <Route exact path='/portfolio'>
+              <Route exact path='/'>
                 <AboutMe isMobile={isMobile} />
               </Route>
-              <Route exact path='/portfolio/resume'>
+              <Route exact path='/resume'>
                 <Resume />
               </Route>
-              <Route path='/portfolio/projects'>
+              <Route path='/projects'>
                 <Portfolio />
               </Route>
-              <Route exact path='/portfolio/contact'>
+              <Route exact path='/contact'>
                 <Contact isMobile={isMobile} />
               </Route>
               <Route path='*' component={PageNotFound} />

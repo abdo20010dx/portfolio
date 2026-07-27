@@ -1,15 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
-import { BrowserRouter as Router } from "react-router-dom";
-import { HashRouter } from "react-router-dom/cjs/react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* HashRouter is required for GitHub Pages: refresh keeps working because
+        the server only sees /portfolio/ and never looks up deep client routes. */}
     <HashRouter>
-      <Router>
-        <App />
-      </Router>
+      <App />
     </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")
