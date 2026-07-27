@@ -2,6 +2,7 @@ import { Box, CardHeader, Container, Grid, Typography, Zoom } from "@material-ui
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
+import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import IconButton from "@material-ui/core/IconButton";
 import { makeStyles } from "@material-ui/core/styles";
@@ -13,15 +14,15 @@ import { personalInfo } from "../../../assets/data/personalInfo"
 
 const useStyles = makeStyles({
   root: {
-    height: "100vh",
     justifyContent: "flex-start",
     flexDirection: "column",
     flexWrap: "nowrap",
   },
 
   cardRoot: {
-    width: 300,
-    minHeight: 300,
+    width: 340,
+    display: "flex",
+    flexDirection: "column",
     margin: "20px",
 
   },
@@ -38,6 +39,11 @@ const useStyles = makeStyles({
     },
   },
 
+  description: {
+    whiteSpace: "pre-line",
+    flexGrow: 1,
+  },
+
   titleHeader: {
     display: "flex",
     justifyContent: "center",
@@ -48,6 +54,7 @@ const useStyles = makeStyles({
     display: "flex",
     justifyContent: "center",
     flexWrap: "wrap",
+    alignItems: "flex-start",
   },
 });
 
@@ -77,24 +84,41 @@ const Portfolio = () => {
                       title={project.title}
                     />
                   </CardActionArea>
-                  <CardActions className={classes.cardActionBtn}>
-                    <IconButton
-                      size="small"
-                      color="primary"
-                      href={project.url}
-                      target="_blank"
-                    >
-                      <OpenInNewIcon fontSize="small" />
-                    </IconButton>
-                    <IconButton
-                      size="small"
-                      color="primary"
-                      href={project.githubUrl}
-                      target="_blank"
-                    >
-                      <GitHub />
-                    </IconButton>
-                  </CardActions>
+                  {project.description && (
+                    <CardContent>
+                      <Typography
+                        variant="body2"
+                        color="textSecondary"
+                        className={classes.description}
+                      >
+                        {project.description.trim()}
+                      </Typography>
+                    </CardContent>
+                  )}
+                  {(project.url || project.githubUrl) && (
+                    <CardActions className={classes.cardActionBtn}>
+                      {project.url && (
+                        <IconButton
+                          size="small"
+                          color="primary"
+                          href={project.url}
+                          target="_blank"
+                        >
+                          <OpenInNewIcon fontSize="small" />
+                        </IconButton>
+                      )}
+                      {project.githubUrl && (
+                        <IconButton
+                          size="small"
+                          color="primary"
+                          href={project.githubUrl}
+                          target="_blank"
+                        >
+                          <GitHub />
+                        </IconButton>
+                      )}
+                    </CardActions>
+                  )}
                 </Card>
               ))}
             </Box>

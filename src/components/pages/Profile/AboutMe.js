@@ -75,17 +75,17 @@ const AboutMe = ({ isMobile }) => {
                   <Typography
                     align='center'
                     variant={isMobile ? 'body1' : 'h6'}>
-                    Abdelrahman Gomaa is an experienced full-stack and backend software developer with over five years of hands-on experience delivering robust, scalable solutions. He has contributed to diverse industries including e-commerce, healthcare, food services, inventory management, food ordering, and finance.
+                    I'm a Full-Stack & Backend Developer with 6+ years of experience turning complex business problems into scalable, production-ready systems across fintech, food delivery, e-commerce, and inventory management.
                   </Typography>
                   <Typography
                     align='center'
                     variant={isMobile ? 'body1' : 'h6'}>
-                    Proficient in modern technologies such as Node.js, NestJS, Spring Boot, React.js, Angular, mongodb, PostgreSQL, mysql, ai tools and prompt engineering, he brings a strong command of both backend architecture and frontend design. His technical expertise is complemented by a solid foundation in software architecture, problem-solving, and cross-functional collaboration.
+                    I currently build fintech systems at Erada Finance — customer and guarantor-facing platforms, internal dashboards, and AI agent-powered workflows — and have contributed to xfin along the way. Proficient in Node.js, NestJS, Spring Boot, React.js, Angular, Next.js, PostgreSQL, MySQL, MongoDB, and AI tools and prompt engineering, I bring a strong command of both backend architecture and frontend design.
                   </Typography>
                   <Typography
                     align='center'
                     variant={isMobile ? 'body1' : 'h6'}>
-                    Abdelrahman holds a Bachelor's degree in Management Information Systems from Alexandria University, and is deeply committed to continuous learning and self-improvement. Outside of work, he enjoys playing chess, watching and playing soccer, and staying physically active.
+                    I hold a Bachelor's degree in Management Information Systems from Alexandria University and am currently in the thesis phase of a Master's in Software Engineering at Cairo University. I'm deeply committed to continuous learning and self-improvement. Outside of work, I enjoy playing chess, watching and playing soccer, and staying physically active.
                   </Typography>
                 </Box>
               </Grid>
