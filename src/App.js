@@ -18,7 +18,6 @@ import Resume from './components/pages/Resume/Resume'
 import Contact from './components/pages/Contact/Contact'
 import DarkModeSwitch from './components/UI/DarkModeSwitch'
 import MenuBtn from './components/UI/MenuBtn'
-import { HashRouter } from 'react-router-dom/cjs/react-router-dom.min'
 const useStyles = makeStyles((theme) => ({
   root: {
     overflow: 'hidden',

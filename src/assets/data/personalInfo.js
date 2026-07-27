@@ -54,7 +54,7 @@ export const personalInfo = {
     {
       firstName: "Abdelrahman",
       lastName: "Gomaa",
-      occupation: "Back-end & Full-stack Developer",
+      occupation: "Full-Stack & Backend Developer",
       city: "Cairo",
       country: "Egypt",
       email: "abdo20010d0@gmail.com",
