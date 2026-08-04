@@ -1,0 +1,5 @@
+# https://abdo20010dx.github.io/portfolio/
+User-agent: *
+Allow: /
+
+Sitemap: https://abdo20010dx.github.io/portfolio/sitemap.xml
